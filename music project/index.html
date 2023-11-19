@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="banner">
+        <img src="logo.png" alt="" class="logo">
+        <div class="text">
+            <h1>Music Studio</h1>
+            <p>Music Can Change The World</p>
+            <div class="banner-btn">
+                <a href="#"><span></span> Find Out </a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="sidenav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SPECIFICATIONS</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">CONNECT</a></li>
+        </ul>
+    </div>
+    <div id="manubtn">
+        <img src="menu.png" alt="" id="menu" onclick="right()">
+    </div>
+    <div id="features">
+        <div id="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <div id="text-section">
+
+                <p>ABOUT</p>
+                <h1>MUSIC IS LOVE </h1>
+            </div>
+            <div id="music-image">
+
+                <img src="pexels-photo-379962.jpeg" alt="">
+                <p>Music is generally defined as the art of arranging sound to create some combination of form, harmony,
+                    melody, rhythm or otherwise expressive content. Exact definitions of music vary
+                    considerably around the world, though it is an aspect of all human societies, a cultural
+                    universal. While scholars agree that music is defined by a few specific elements, there is no
+                    consensus on their precise definitions.The creation of music is commonly divided into musical
+                    composition, musical improvisation, and musical performance, though the topic itself extends into
+                    academic disciplines, criticism, philosophy, and psychology.Music often plays a key role in social
+                    activities, religious rituals, rite of passage ceremonies, celebrations, and cultural activities.
+                    The music industry includes songwriters, performers, sound engineers, producers, tour organizers,
+                    distributors of instruments, accessories, and sheet music. Compositions, performances, and
+                    recordings are assessed and evaluated by music critics, music journalists, and music scholars, as
+                    well as amateurs. </p>
+
+
+
+
+
+            </div>
+        </div>
+        <div id="artist">
+            <div class="oye">
+                <span class="button" id="white" onclick="bgcolor('white')"></span>
+                <span class="button" id="black" onclick="bgcolor('black')"></span>
+                </div>
+            
+            <h1 id="artist-of">ARTIST'S</h1>
+            <div id="image-line">
+                <div class="image-container">
+                    <span class="areasong"><img src="play.png" alt="" id="mysong" onclick="arjit()"></span>
+                    <img src="Arijit-Singh.jpg" alt="">
+
+                    <div class="overlay"  ></div>
+                    <div class="service-desc">
+                        <h3> Arjit Singh</h3>
+                        <hr>
+                        <p>One good thing about music is, when it hits you, you feel no pain. And, Arijit Singh’s voice
+                            is like that ever lasting memory, you have no escape from. When you hear him sing, your body
+                            freezes in the moment leaving your mind absolutely compelled to this voice.</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <span class="song-edit"><img src="play.png" alt="" id="song1" onclick="justin()"></span>
+                    <img src="celebrity-style-2013-10-justin-bieber-adidas-neo-interactive-look-book-03.webp" 
+                        alt="" >
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Justin Bieber</h3>
+                        <hr>
+                        <p>Justin Bieber is a Canadian singer-songwriter. The teen idol was discovered on YouTube by
+                            manager Scooter Braun when he was 13 years old. At 16, he became the youngest solo male
+                            artist to land the top spot on Billboard 200, and he is also the first artist to get seven
+                            songs from a debut record on the Billboard Hot 100</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <span class="areasong"><img src="play.png" id="song3" onclick="am()" ></span>
+                    <img src="armaan-malik.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Armaan Malik</h3>
+                        <hr>
+                        <p>Armaan Malik is a popular Indian playback singer who sang the title track from Salman Khan’s
+                            movie Jai Ho</p>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <span class="song-edit"><img src="play.png" alt="" id="song2" onclick="zaynmalik()"></span>
+                    <img src="entertainment-music-2015-03-zayn-malik-i-dont-mind-main.webp" alt="" >
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Zayn Malik</h3>
+                        <hr>
+                        <p>Zayn, is a British singer. Born and raised in Bradford, Malik auditioned as a solo contestant
+                            for the British music competition television series The X Factor in 2010. After being
+                            eliminated, Malik was brought back to the competition to form the five-piece boy band One
+                            Direction, which went on to become one of the best-selling boy bands of all time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio src="Kesariya Tera Ishq Hai Piya - Arijit Singh-(DJMaza).mp3" id="mymusic"></audio>
+    <audio src="Justin-Bieber-What-Do-You-Mean-NaijaPreyNG.mp3 " id="jb"></audio>
+    <audio src="Zayn - INTERMISSION_ fLoWer.mp3" id="zayn"></audio>
+    <audio src="Tu You - Armaan Malik 320 Kbps.mp3" id="arman"></audio>
+ 
+
+    <script src="script.js"></script>
+    
+
+
+
+
+</body>
+
+</html>
